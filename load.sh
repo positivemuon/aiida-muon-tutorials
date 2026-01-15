@@ -7,6 +7,11 @@ curl -JLO "https://github.com/positivemuon/aiida-muon-tutorials/archive/refs/hea
 unzip aiida-muon-tutorials-main.zip
 cd aiida-muon-tutorials-main/
 
+curl -JLO "https://github.com/positivemuon/aiida-muon-tutorials/releases/download/v0.0.1/CoF2.aiida"
+curl -JLO "https://github.com/positivemuon/aiida-muon-tutorials/releases/download/v0.0.1/Cu.aiida"
+curl -JLO "https://github.com/positivemuon/aiida-muon-tutorials/releases/download/v0.0.1/Fe.aiida"
+curl -JLO "https://github.com/positivemuon/aiida-muon-tutorials/releases/download/v0.0.1/LaFeAsO.aiida"
+
 # unpack data
 find . -name '*.zip' -exec sh -c 'unzip -o "$1" -d "$(dirname "$1")"' _ {} \;
 
