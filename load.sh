@@ -19,7 +19,6 @@ find . -name '*.zip' -exec sh -c 'unzip -o "$1" -d "$(dirname "$1")"' _ {} \;
 # load repos into aiida
 find . -name '*.aiida' -exec verdi archive import {} \;
 
-#pip install git+https://github.com/mikibonacci//aiidalab-qe.git@speedup-tree
-#pip install git+https://github.com/positivemuon/aiida-muon.git@main
-#pip install ipywidgets==7.8.5
-#verdi daemon restart
+pip install --no-deps git+https://github.com/mikibonacci//aiidalab-qe.git@speedup-tree
+pip install --no-deps git+https://github.com/positivemuon/aiida-muon.git@main
+verdi daemon restart
