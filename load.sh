@@ -11,7 +11,7 @@ curl -JLO "https://github.com/positivemuon/aiida-muon-tutorials/releases/downloa
 curl -JLO "https://github.com/positivemuon/aiida-muon-tutorials/releases/download/v0.0.1/Cu.aiida"
 curl -JLO "https://github.com/positivemuon/aiida-muon-tutorials/releases/download/v0.0.1/Fe.aiida"
 curl -JLO "https://github.com/positivemuon/aiida-muon-tutorials/releases/download/v0.0.1/LaFeAsO.aiida"
-curl -JLO "ttps://github.com/positivemuon/aiida-muon-tutorials/releases/download/v0.0.1/handson.pdf"
+curl -JLO "https://github.com/positivemuon/aiida-muon-tutorials/releases/download/v0.0.1/handson.pdf"
 
 # unpack data
 find . -name '*.zip' -exec sh -c 'unzip -o "$1" -d "$(dirname "$1")"' _ {} \;
